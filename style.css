@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol,li{
+    list-style-type: none;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.todo{
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 20px;
+    background: #ffffff;
+}
+h1{
+    font-weight: 500;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: default;
+}
+.addTask{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+#todoInput{
+    font-size: 22px;
+    width: 83%;
+    padding: 0 10px;
+    border: 1px solid #b9b9b9;
+    border-radius: 10px;
+}
+#addButton{
+    width: 15%;
+    color: #fff;
+    background: rgb(171, 81, 255);
+    border: none;
+    font-size: 50px;
+    transition: 0.25s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#addButton:hover{
+    background: rgb(164, 67, 255);
+}
+#addButton:active{
+    background: rgb(116, 24, 203);
+}
+#addButton::selection{
+    background: none;
+}
+#taskList{
+    margin-top: 25px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+#taskList li{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 5px 0;
+    background: #e2e2e2;
+    display: flex;
+    justify-content: space-between;
+}
+#taskList li:hover .rightButtons{
+    visibility: visible;
+    opacity: 1;
+}
+.taskContent{
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.checkIcon{
+    width: 10%;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    color: rgb(0,255,0);
+    cursor: pointer;
+}
+.taskText{
+    font-size: 20px;
+    padding: 10px 0;
+    line-height: 28px;
+    width: 85%;
+}   
+.rightButtons{
+    width: 20%;
+    height: 50px;
+    display: flex;
+    transition: 0.4s;
+    opacity: 0;
+}
+.rightButtons button{
+    width: 50%;
+    height: 50px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.deleteButton{
+    background: rgb(255, 0, 0);
+}
+.changeButton{
+    background: rgb(0, 42, 255);
+}
+.changeInput{
+    height: 95px;
+    background: transparent;
+    width: 85%;
+    border: 1px solid rgb(97, 97, 97);
+    font-size: 20px;
+    outline-color: rgb(97, 97, 97);
+    resize: none;
+}
+
+.cleareAll{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#tasksCount{
+    font-size: 22px;
+    cursor: default;
+}
+#cleareAllButton{
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(171, 81, 255);
+    transition: 0.25s;
+    cursor: pointer;
+}
+#cleareAllButton:active{
+    background: rgb(142, 78, 202);
+}
+
