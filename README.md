@@ -1,2 +1,2 @@
 # Todo
-Simple note that supports operations such as ` creating , changing and deleting notes.
+Simple todo that supports operations such as ` creating , changing and deleting notes.
